@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><title>HoneyNets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+  <header class="top-heading">
+    <h1 class="text"></h1>
+    <a href="index.html"><button class="button">Inicio</button></a>
+  </header>
+  <div class="container">
+    <section>
+      <input class="sr-only" id="card-1" type="radio" name="panel" checked />
+      <input class="sr-only" id="card-2" type="radio" name="panel" />
+      <input class="sr-only" id="card-3" type="radio" name="panel" />
+
+      <article id="article-1">
+        <header>
+          <h2>¿Qué son las Honeynets?</h2>
+          <label for="card-2" class="arrow"></label>
+        </header>
+        <div>
+          <img src="https://www.techtarget.com/rms/onlineimages/security-honeynet_works-f_mobile.png" alt="img1">
+          <div class="poem">
+            <p>
+              Una <strong>honeynet</strong> es una red simulada que contiene uno o varios sistemas intencionadamente vulnerables (conocidos como honeypots), diseñada para atraer a ciberdelincuentes o software malicioso. A diferencia de un honeypot tradicional, que normalmente es una sola máquina, una honeynet simula una red entera, proporcionando un entorno más realista y complejo. Esto permite observar ataques más sofisticados y estudiar con mayor detalle el comportamiento de los atacantes en un escenario que imita una infraestructura real.
+            </p>
+            <p>
+              El propósito de una honeynet no es únicamente atraer ataques, sino registrar cuidadosamente cada acción que ocurre dentro de esta red, permitiendo a los especialistas en ciberseguridad recopilar información crítica. Estos entornos no solo identifican vulnerabilidades comunes explotadas por atacantes, sino también nuevos vectores de ataque, técnicas de evasión y herramientas emergentes utilizadas por los cibercriminales.
+            </p>
+            <p>
+              Además, una honeynet está configurada para no tener ningún valor funcional dentro de una red empresarial. De este modo, cualquier interacción con la honeynet se considera sospechosa por definición, lo que facilita enormemente la identificación de comportamientos maliciosos y reduce los falsos positivos comunes en otros sistemas de detección de intrusos.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article id="article-2">
+        <header>
+          <h2>Objetivos Principales</h2>
+          <label for="card-3" class="arrow"></label>
+        </header>
+        <div>
+          <p></p>
+          <div class="poem">
+            <p>
+              Las honeynets se utilizan con fines estratégicos y educativos dentro del campo de la ciberseguridad. Sus tres objetivos principales son:
+            </p>
+            <ul>
+              <li><strong>Detección temprana de amenazas:</strong> Permiten identificar y rastrear intentos de intrusión o propagación de malware incluso antes de que estos afecten a sistemas reales.</li>
+              <li><strong>Análisis del comportamiento del atacante:</strong> Registran toda interacción con la red simulada para estudiar cómo operan los atacantes, qué herramientas usan y cómo intentan evadir la detección.</li>
+              <li><strong>Fortalecimiento de medidas defensivas:</strong> La información recopilada ayuda a mejorar las configuraciones de seguridad, actualizar firmas y definir mejores estrategias de protección.</li>
+            </ul>
+            <p>
+              En conjunto, estos objetivos hacen de las honeynets una herramienta poderosa tanto para proteger sistemas actuales como para preparar respuestas frente a amenazas futuras.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article id="article-3">
+        <header>
+          <h2>Componentes Clave</h2>
+          <label for="card-1" class="arrow"></label>
+        </header>
+        <div>
+          <img src="https://www.researchgate.net/publication/285598988/figure/fig3/AS:667911429562376@1536253902304/Gen-II-honeynet-architecture.jpg" alt="img3">
+          <div class="poem">
+            <p>
+              Una honeynet está compuesta por varios elementos que trabajan en conjunto para simular un entorno realista, atraer a los atacantes y registrar su actividad sin poner en riesgo otros sistemas. Sus componentes clave incluyen:
+            </p>
+            <ul>
+              <li><strong>Honeypots:</strong> Sistemas individuales configurados con vulnerabilidades intencionales para atraer atacantes. Emulan servidores, estaciones de trabajo o dispositivos reales con servicios y datos simulados.</li>
+              <li><strong>Gateway o controlador de red:</strong> Actúa como intermediario, controlando el flujo de tráfico hacia y desde la honeynet, registrando la actividad y evitando que se usen los honeypots como base para otros ataques.</li>
+              <li><strong>Sistema de monitoreo y recolección de datos:</strong> Registra todo lo que ocurre dentro de la honeynet, incluyendo comandos, archivos y conexiones. Utiliza herramientas como sistemas de logging, captura de paquetes y análisis de comportamiento.</li>
+            </ul>
+            <p>
+              La correcta configuración y aislamiento de estos componentes es esencial para garantizar que la honeynet sea efectiva y segura, evitando riesgos hacia otras redes reales.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Micrositio de Seguridad en Redes <a href="https://github.com/MauroZP"><i class="fa fa-github" style="font-size:36px"></i></a></p>
+  </footer>
+
+  <script src="Script Folder\scripts_hn.js" defer></script>
+</body>
+</html>
