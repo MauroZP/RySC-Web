@@ -108,8 +108,7 @@ footer{
     height: 100%;
     top: 0;
     right: 0;
-    background-color: #53d9d1;
-
+    background-image: linear-gradient( #6c3, #09f);
     clip-path: circle(0% at 50% calc(50%));
     transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
