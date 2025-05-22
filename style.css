@@ -553,7 +553,7 @@ footer{
 
 .button {
 	border-radius: 5px;
-    --background: #275efe;
+    --background: linear-gradient(#09f,#6c3);
     --text: #fff;
     --font-size: 16px;
     --duration: .5s;
